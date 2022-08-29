@@ -808,13 +808,27 @@
 }
 
 .section-heading {
+  position: static;
+  display: block;
+  max-height: none;
   margin-top: 32px;
   margin-bottom: 0px;
+  padding-top: 0px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-ordinal-group: 1;
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
   font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   color: #07090d;
   font-size: 56px;
   line-height: 72px;
   letter-spacing: -0.02em;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 .section-heading.left {
@@ -896,11 +910,11 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 0px;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -912,6 +926,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -o-object-fit: none;
+  object-fit: none;
 }
 
 .section.horizontal {
