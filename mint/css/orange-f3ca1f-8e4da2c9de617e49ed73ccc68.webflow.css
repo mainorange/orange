@@ -3296,6 +3296,7 @@
 }
 
 .price-container {
+  display: inline-block;
   width: 100%;
   max-width: 1240px;
   -webkit-box-orient: vertical;
@@ -3311,6 +3312,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  text-align: center;
 }
 
 .plan-type-wrapper {
